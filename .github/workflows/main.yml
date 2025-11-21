@@ -10,4 +10,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run a script
-        run: echo "This is a manually triggered workflow."
+        run: echo "This is a manually triggered workflow script execution."
