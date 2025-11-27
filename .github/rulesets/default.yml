@@ -1,0 +1,22 @@
+name: "Enforce PR Reviews and No Direct Pushes"
+target: 
+  - branch:main
+  - branch:develop
+enforcement: active
+conditions:
+  pull_request: true
+rules:
+  require_review:
+    reviewers: 
+      users: 
+        - Srivathsan-V # Add default reviewer usernames here
+        # - reviewer2
+        # - reviewer3
+    required_approvals: 3
+    dismiss_stale_reviews_on_push: true
+    require_code_owner_review: false # Set to true if you use CODEOWNERS
+
+  restrict_push:
+    allow_pushes: false
+    allow_force_pushes: false
+    allow_deletions: false
