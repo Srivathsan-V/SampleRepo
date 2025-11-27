@@ -14,7 +14,7 @@ rules:
         # - reviewer3
     required_approvals: 3
     dismiss_stale_reviews_on_push: true
-    require_code_owner_review: false # Set to true if you use CODEOWNERS
+    require_code_owner_review: true # Set to true if you use CODEOWNERS
 
   restrict_push:
     allow_pushes: false
